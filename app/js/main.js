@@ -17,4 +17,13 @@ $(function () {
       prevArrow: '<button id="prev" type="button" class="prev"></button>',
       nextArrow: '<button id="next" type="button" class="next"></button>'
     });
+    $('.slider-services').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      arrows: true,
+      prevArrow: '<button id="prev" type="button" class="prev"></button>',
+      nextArrow: '<button id="next" type="button" class="next"></button>'
+    });
 });
