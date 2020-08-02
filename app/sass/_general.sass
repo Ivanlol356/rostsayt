@@ -87,7 +87,6 @@
                         color: #131313
                         text-decoration: none
                 .order
-
                     a 
                         font-size: 1em
                         font-weight: 400
@@ -98,7 +97,7 @@
                         text-decoration: none
                         &:hover
                             background-color: #dc3545
-                            color: fff
+                            color: #fff
     .header-content
         padding-bottom: 100px
         .header-title
@@ -304,7 +303,7 @@
         transform: skewX(63deg) translateX(-50%)
     .danger-title
         font-size: 3em
-// ************************************/DANGER**************************************
+// ************************************/DANGER************************************
 // ************************************TRUST**************************************
 
 .trust
@@ -315,7 +314,7 @@
 
 // ************************************/TRUST**************************************
 
-// ************************************REVIEWS**************************************
+// ************************************REVIEWS*************************************
 .reviews
     padding-top: 100px
     padding-bottom: 100px
@@ -371,7 +370,7 @@
             font-family: icomoon
             color: #9F9F9F
             font-size: 70px
-// ************************************/REVIEWS**************************************
+// ************************************/REVIEWS**********************************
 // ************************************GAME**************************************
 .game 
     padding-top: 100px
@@ -387,7 +386,7 @@
                     filter: grayscale(0)
                     opacity: 1
 // ************************************/GAME**************************************
-// ************************************SEND-ORDER**************************************
+// ************************************SEND-ORDER*********************************
 .send-order 
     padding-top: 100px
     padding-bottom: 100px
@@ -438,7 +437,7 @@
             &:hover
                 background-color: #dc3545
                 color: fff
-// ************************************/SEND-ORDER**************************************
+// ************************************/SEND-ORDER**********************************
 // ************************************PROBLEM**************************************
 .problem 
     background-image: url(../img/bg-mount.jpeg)
@@ -455,8 +454,8 @@
             padding-top: 50px
             padding-bottom: 50px
 
-// ************************************/PROBLEM**************************************                   
-
+// ************************************/PROBLEM**************************************        
+// ************************************BUSINESS**************************************
 .business
     background-color: #000
     position: relative
@@ -480,11 +479,11 @@
         top: 0
         bottom: 0
         right: -300px
-        width: 45vw
+        width: 45%
         background: #fff
         transform: skewX(60deg)
-
-
+// ************************************/BUSINESS*************************************
+// ************************************SERVICE***************************************
 .service
     background: #f9fafc
     padding-top: 70px
@@ -561,7 +560,8 @@
             border-radius: .25em
             border: 1px solid rgba(245,58,58,.3)
             text-decoration: none
-
+//************************************/SERVICE**************************************
+//************************************PROJECT-STAGE*********************************
 .project-stage
     padding-top: 100px
     padding-bottom: 100px
@@ -623,9 +623,69 @@
             width: 200px
             height: 50px
             transform: translateX(50%) scaleX(-1)
-
+//***********************************/PROJECT-STAGE******************************
+//***********************************DESCRIPTION*********************************
 .description
+    padding-bottom: 100px
+    a 
+        text-decoration: none
+//***********************************/DESCRIPTION*********************************
 
+
+.youtube
+    padding-top: 100px
+    padding-bottom: 100px
+    background: #f9fafc
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        background-image: url(../img/m4a1.png)
+        background-repeat: no-repeat
+        background-position: right
+        display: block
+        width: 100%
+        height: 100%
+        right: 0
+        top: -70px
+        z-index: 10
+
+    .slider-youtube
+        .item
+            .youtube-video
+                width: 310px
+                iframe
+                    width: 90%
+                    margin: 0 auto
+        .prev
+            position: absolute
+            top: 90px
+            left: -130px 
+            border: none
+            background: transparent
+            outline: none
+            transition: 0.3s
+            &::before
+                content: "\f104"
+                font-family: icomoon
+                color: #9F9F9F
+                font-size: 70px
+        .next
+            position: absolute
+            top: 90px
+            right: -50px 
+            border: none
+            background: transparent
+            outline: none
+            transition: 0.3s
+            &::before
+                content: "\f105"
+                font-family: icomoon
+                color: #9F9F9F
+                font-size: 70px
+
+
+//***********************************GUARANTEE************************************
 .guarantee
     .guarantee-inner
         padding-top: 100px
@@ -637,3 +697,144 @@
     .guarantee-title
         font-size: 3em
         text-align: center
+//**********************************/GUARANTEE************************************
+
+.help
+    padding-top: 100px
+    padding-bottom: 100px
+    .help-title
+        font-size: 3em
+        text-align: center
+    .help-inner
+        padding-top: 50px
+        .help-form
+            display: flex
+            flex-direction: row
+            margin-top: 40px
+            label
+                padding-bottom: 10px
+                display: flex
+                input
+                    margin-top: 5px
+                    margin-right: 10px
+    .help-container-form
+        display: flex
+        flex-direction: column
+        border: 1px solid rgba(0,0,0,.125)
+        border-radius: .25em
+        label
+            display: flex
+            flex-direction: column
+            margin-top: 15px
+            input
+                padding: 7px
+                border: 1px solid rgba(0,0,0,.125)
+                border-radius: .25em
+                &:focus
+                    outline-color: #17a2b8
+            textarea 
+                border: 1px solid rgba(0,0,0,.125)
+                padding: 10px
+                min-height: 100px
+                &:focus
+                    outline-color: #17a2b8
+            p 
+                margin: 0
+        .checkbox 
+            display: flex
+            flex-direction: row
+            margin-bottom: 30px
+            input
+                margin-right: 10px
+                margin-top: 5px
+        button
+            font-size: 1em
+            font-weight: 400
+            color: #fff 
+            background: #F53A3A
+            padding: 7px 10px
+            border-radius: 8px
+            text-decoration: none
+            text-align: center
+            border: none
+            display: block
+            width: 100%
+            margin-top: 15px
+            &:hover
+                background-color: #dc3545
+                color: #fff
+
+
+.footer
+    padding-top: 50px
+    padding-bottom: 40px
+    background: #F9FAFC
+    .footer-top
+        .footer-nav
+            margin: 0
+            padding: 0
+            .footer-item
+                list-style: none 
+                .footer-link
+                    transition: .3s all
+                    color: #000
+                    text-decoration: none
+                    display: block
+                    &:hover
+                        color: #F53A3A 
+        .office
+            .tel a,.email  a
+                color: #F53A3A
+                text-decoration: none
+            p 
+                padding-top: 15px
+                padding-bottom: 10px
+            .footer-btn 
+                margin-top: 15px
+                a
+                    padding: 10px 15px
+                    color: #fff
+                    background: #F53A3A
+                    border-radius: .25em
+                    text-decoration: none
+                    &:hover
+                        background-color: #dc3545
+    .social
+        padding-top: 50px
+        padding-bottom: 50px
+        .social-blog 
+            position: relative
+            a 
+                display: block
+                background: transparent
+                padding: 5px 15px
+                border-radius: .25em
+                text-decoration: none
+                color: #F53A3A
+                border: 1px solid rgba(245,58,58,.3)
+                &:hover
+                    background: #F53A3A
+                    color: #fff
+            &::before
+                content: "\ea92"
+                font-family: icomoon
+                font-size: 15px
+                position: absolute
+                left: 30px 
+                top: 8px 
+    .language
+        a 
+            color: #F53A3A
+            opacity: .7
+            padding-bottom: 4px
+        .ru 
+            border-right: 1px solid black
+            padding-right: 15px
+            margin-right: 10px
+            opacity: .3
+            text-decoration: none
+    .copyright
+        color:#9F9F9F
+        padding-top: 50px
+        font-size: .75em
+

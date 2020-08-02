@@ -26,4 +26,12 @@ $(function () {
       prevArrow: '<button id="prev" type="button" class="prev"></button>',
       nextArrow: '<button id="next" type="button" class="next"></button>'
     });
+    $('.slider-youtube').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<button id="prev" type="button" class="prev"></button>',
+      nextArrow: '<button id="next" type="button" class="next"></button>'
+    });
+    
 });
