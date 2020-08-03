@@ -9,10 +9,36 @@
 
 .container 
     max-width: 1250px
-
+     
 // ******************************HEADER***********************************
 .header
     background: #fff
+    overflow: hidden
+    position: relative
+    &::after
+        content: ""
+        width: 20px
+        height: 100vh
+        background: #F53A3A
+        overflow: hidden
+        position: absolute
+        left: 60%
+        top: -100px
+        transform: skewX(-20deg)
+        overflow: hidden
+    &::before
+        content: ""
+        background-image: url(../img/city_top.jpeg)
+        background-size: cover
+        background-position: top
+        background-repeat: no-repeat
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 61%
+        width: 60%
+        overflow: hidden
+        transform: skewX(-20deg)
     .header-top
         display: flex
         flex-direction: row
