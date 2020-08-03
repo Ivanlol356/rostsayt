@@ -29,6 +29,8 @@
                 padding-left: 50px
                 .nav-item
                     padding-right: 25px
+                    &:hover > ul
+                        display: block
                     .nav-link
                         color: #131313
                         transition: 0.3s all
@@ -38,6 +40,26 @@
                             color: #F53A3A
                             border-bottom: 4px solid #F53A3A
                             padding-bottom: 0px
+                    .drop-menu
+                        padding: 0
+                        margin: 0
+                        position: absolute
+                        text-transform: none
+                        display: none
+                        z-index: 100
+                        .dropmenu-item
+                            list-style: none
+                            .dropmenu-link
+                                color: #131313
+                                transition: 0.3s all
+                                font-weight: 400
+                                text-decoration: none
+                                padding: 7px
+                                border: 1px solid rgba(0,0,0,.125)
+                                display: block
+                                background: #fff
+                                &:hover
+                                    color: #F53A3A
         .place-of-residence
             display: flex
             flex-direction: row 
@@ -478,7 +500,7 @@
         position: absolute
         top: 0
         bottom: 0
-        right: -300px
+        right: -350px
         width: 45%
         background: #fff
         transform: skewX(60deg)
@@ -630,8 +652,7 @@
     a 
         text-decoration: none
 //***********************************/DESCRIPTION*********************************
-
-
+//***********************************YOUTUBE**************************************
 .youtube
     padding-top: 100px
     padding-bottom: 100px
@@ -649,7 +670,6 @@
         right: 0
         top: -70px
         z-index: 10
-
     .slider-youtube
         .item
             .youtube-video
@@ -683,8 +703,7 @@
                 font-family: icomoon
                 color: #9F9F9F
                 font-size: 70px
-
-
+//***********************************/YOUTUBE*************************************
 //***********************************GUARANTEE************************************
 .guarantee
     .guarantee-inner
@@ -698,7 +717,7 @@
         font-size: 3em
         text-align: center
 //**********************************/GUARANTEE************************************
-
+//***********************************HELP*****************************************
 .help
     padding-top: 100px
     padding-bottom: 100px
@@ -763,8 +782,8 @@
             &:hover
                 background-color: #dc3545
                 color: #fff
-
-
+//***********************************/HELP****************************************
+//***********************************FOOTER***************************************
 .footer
     padding-top: 50px
     padding-bottom: 40px
@@ -834,7 +853,7 @@
             opacity: .3
             text-decoration: none
     .copyright
-        color:#9F9F9F
+        color: #9F9F9F
         padding-top: 50px
         font-size: .75em
-
+//***********************************/FOOTER**************************************
