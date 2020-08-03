@@ -36,7 +36,7 @@
         top: 0
         bottom: 0
         left: 61%
-        width: 60%
+        width: 50%
         overflow: hidden
         transform: skewX(-20deg)
     .header-top
@@ -148,6 +148,18 @@
                             color: #fff
     .header-content
         padding-bottom: 100px
+        position: relative
+        &::before
+            content: ""
+            background-image: url(../img/header/slider-girl.png)
+            background-size: contain
+            background-repeat: no-repeat
+            position: absolute
+            bottom: 0
+            right: -50%
+            width: 500px
+            height: 600px
+            z-index: 5
         .header-title
             font-size: 2em
             padding-bottom: 30px
@@ -176,10 +188,6 @@
             &:hover
                 background-color: #dc3545
                 color: fff
-
-
-
-        
 // *************************************HEADER**************************************
 // *************************************SERVICES************************************
 .services 
