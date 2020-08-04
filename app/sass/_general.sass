@@ -1,4 +1,5 @@
-*
+*,::after, ::before 
+    box-sizing: border-box
     box-sizing: border-box
 
 .body
@@ -275,6 +276,9 @@
                 border-radius: .25em
                 border: 1px solid rgba(245,58,58,.3)
                 text-decoration: none
+                &:hover
+                    color:#fff
+                    background: #F53A3A
     .cards-item
         background-color: #fff
         border: 1px solid rgba(0,0,0,.125)
@@ -323,6 +327,9 @@
             border: 1px solid rgba(245,58,58,.3)
             text-decoration: none
             margin-right: 30px
+            &:hover
+                color:#fff
+                background: #F53A3A
 // *************************************SERVICES************************************
 // *************************************DANGER**************************************
 .danger
@@ -388,12 +395,12 @@
         position: relative
         &::before
             content: ""
-            background-image: url(../img/header/slider-girl-2.png)
+            background-image: url(../img/header/slider-girl-3.png)
             background-size: contain
             background-repeat: no-repeat
             position: absolute
             bottom: -140px
-            right: 0
+            right: -5%
             width: 500px
             height: 700px
             z-index: 5
@@ -507,7 +514,7 @@
         position: relative
         &::before
             content: ""
-            background-image: url(../img/header/slider-girl-2.png)
+            background-image: url(../img/header/slider-girl.png)
             background-size: contain
             background-repeat: no-repeat
             position: absolute
@@ -666,6 +673,63 @@
         background: #fff
         transform: skewX(60deg)
 // ************************************/BUSINESS*************************************
+// ************************************PORTFOLIO*************************************
+.portfolio
+    .portfolio-item
+        min-height: 300px
+        padding-right: 0
+        padding-left: 0
+        a 
+            background: no-repeat center
+            background-size: cover
+            display: block
+            height: 100%
+            width: 100%
+            text-decoration: none
+            position: relative
+            &:hover > .desc
+                opacity: 1
+                background: rgba(0,0,0,.6)
+            .img-block
+                width: 100%
+                height: 100%
+                img
+                    transition: 0.3s
+                    object-position: top
+                    object-fit: cover
+                    height: 100% !important
+                    width: 100% !important
+                    border: 0 none
+                    max-width: 100%
+                    vertical-align: middle
+                    border-style: none
+            .desc
+                transition: .5 all
+                height: 100%
+                width: 100%
+                color: #fff
+                display: flex
+                flex-direction: column
+                text-align: center
+                justify-content: center
+                align-content: space-between
+                align-items: center
+                background: rgba(0,0,0,.6)
+                position: absolute
+                opacity: 0
+            .descs
+                height: 100%
+                width: 100%
+                color: #fff
+                display: flex
+                flex-direction: column
+                text-align: center
+                justify-content: center
+                align-content: space-between
+                align-items: center
+                background: rgba(0,0,0,.6)
+                opacity: 1
+// ************************************/PORTFOLIO************************************
 // ************************************SERVICE***************************************
 .service
     background: #f9fafc
@@ -743,6 +807,9 @@
             border-radius: .25em
             border: 1px solid rgba(245,58,58,.3)
             text-decoration: none
+            &:hover
+                color:#fff
+                background: #F53A3A
 //************************************/SERVICE**************************************
 //************************************PROJECT-STAGE*********************************
 .project-stage
@@ -1032,3 +1099,5 @@
         padding-top: 50px
         font-size: .75em
 //***********************************/FOOTER**************************************
+
+
