@@ -9,7 +9,6 @@
 
 .container 
     max-width: 1250px
-     
 // ******************************HEADER***********************************
 .header
     background: #fff
@@ -22,23 +21,20 @@
         background: #F53A3A
         overflow: hidden
         position: absolute
-        left: 60%
-        top: -100px
-        transform: skewX(-20deg)
+        left: 55%
+        top: 0
         overflow: hidden
     &::before
         content: ""
         background-image: url(../img/city_top.jpeg)
         background-size: cover
-        background-position: top
         background-repeat: no-repeat
         position: absolute
-        top: 0
+        top: -100px
         bottom: 0
-        left: 61%
-        width: 50%
+        left: 55%
+        width: 60%
         overflow: hidden
-        transform: skewX(-20deg)
     .header-top
         display: flex
         flex-direction: row
@@ -151,7 +147,7 @@
         position: relative
         &::before
             content: ""
-            background-image: url(../img/header/slider-girl.png)
+            background-image: url(../img/header/slider-girl-2.png)
             background-size: contain
             background-repeat: no-repeat
             position: absolute
@@ -365,8 +361,45 @@
 .trust
     padding-top: 100px
     padding-bottom: 50px
-    .trust-text
-        font-size: 1.1em
+    position: relative
+    overflow: hidden
+    &::after
+        content: ""
+        width: 20px
+        height: 100vh
+        background: #F53A3A
+        overflow: hidden
+        position: absolute
+        left: 60%
+        top: -100px
+        overflow: hidden
+    &::before
+        content: ""
+        background-image: url(../img/fon/city_top.jpeg)
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 60%
+        width: 50%
+        overflow: hidden
+    .trust-inner
+        position: relative
+        &::before
+            content: ""
+            background-image: url(../img/header/slider-girl-2.png)
+            background-size: contain
+            background-repeat: no-repeat
+            position: absolute
+            bottom: -140px
+            right: 0
+            width: 500px
+            height: 700px
+            z-index: 5
+        .trust-text
+            font-size: 1.1em
+
 
 // ************************************/TRUST**************************************
 
@@ -447,52 +480,89 @@
     padding-top: 100px
     padding-bottom: 100px
     background: #F9FAFC
-    .send-order-title
-        font-size: 3em
-        line-height: 1.2
-    .send-order-subtitle
-        font-size: 1.1em
-        padding-top: 50px
-        padding-bottom: 50px
-    .send-order-form
-        padding-left: 10px
-        form
-            label
-                display: flex
-                flex-direction: column
-                padding-bottom: 20px
-                p 
-                    margin: 0
-                input
-                    width: 300px
-                    border: 1px solid rgba(0,0,0,.125)
-                    border-radius: .25em
-                    padding: 10px
-                    outline: none
-            .checkbox-label
-                display: flex
-                flex-direction: row
-                p 
-                    margin: 0
-                    opacity: .5
-                input
-                    width: 20px
-                    margin-top: 5px
-                    margin-right: 10px
-    .send-order-btn
-        margin-top: 30px
-        button
-            font-size: 1em
-            font-weight: 400
-            color: #fff 
-            background: #F53A3A
-            padding: 5px 10px
-            border-radius: 8px
-            text-decoration: none
-            border: none
-            &:hover
-                background-color: #dc3545
-                color: fff
+    position: relative
+    overflow: hidden
+    &::after
+        content: ""
+        width: 20px
+        height: 100vh
+        background: #F53A3A
+        overflow: hidden
+        position: absolute
+        left: 60%
+        top: -100px
+        overflow: hidden
+    &::before
+        content: ""
+        background-image: url(../img/fon/city_footer.jpeg)
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 60%
+        width: 50%
+        overflow: hidden
+    .send-order-inner
+        position: relative
+        &::before
+            content: ""
+            background-image: url(../img/header/slider-girl-2.png)
+            background-size: contain
+            background-repeat: no-repeat
+            position: absolute
+            bottom: 0%
+            top: 16%
+            right: 0
+            width: 500px
+            height: 700px
+            z-index: 5
+        .send-order-title
+            font-size: 3em
+            line-height: 1.2
+        .send-order-subtitle
+            font-size: 1.1em
+            padding-top: 50px
+            padding-bottom: 50px
+        .send-order-form
+            padding-left: 10px
+            form
+                label
+                    display: flex
+                    flex-direction: column
+                    padding-bottom: 20px
+                    p 
+                        margin: 0
+                    input
+                        width: 300px
+                        border: 1px solid rgba(0,0,0,.125)
+                        border-radius: .25em
+                        padding: 10px
+                        outline: none
+                .checkbox-label
+                    display: flex
+                    flex-direction: row
+                    p 
+                        margin: 0
+                        opacity: .5
+                    input
+                        width: 20px
+                        margin-top: 5px
+                        margin-right: 10px
+        .send-order-btn
+            margin-top: 30px
+            button
+                font-size: 1em
+                font-weight: 400
+                color: #fff 
+                background: #F53A3A
+                padding: 5px 10px
+                border-radius: 8px
+                text-decoration: none
+                border: none
+                &:hover
+                    background-color: #dc3545
+                    color: #fff
 // ************************************/SEND-ORDER**********************************
 // ************************************PROBLEM**************************************
 .problem 
@@ -500,6 +570,63 @@
     background-size: cover
     background-position: center
     background-repeat: no-repeat
+    padding-top: 100px
+    padding-bottom: 50px
+    .problem-description
+        font-size: 1.2em
+        .problem-list 
+            list-style: none
+            .bb-1
+                border-bottom: 2px solid #F53A3A
+                width: 510px
+                padding-bottom: 10px
+                position: relative
+                &::before
+                    content: "\f111"
+                    font-family: icomoon
+                    position: absolute
+                    right: -30px
+                    bottom: -24px
+                    color:#F53A3A
+                    font-size: 30px
+                    padding: 5px 15px
+                    background: rgba(245, 58, 58,.3)
+                    border-radius: 50%
+            .bb-2
+                border-bottom: 2px solid #F53A3A
+                width: 440px
+                padding-bottom: 10px
+                position: relative
+                margin-top: 20px
+                &::before
+                    content: "\f111"
+                    font-family: icomoon
+                    position: absolute
+                    right: -35px
+                    bottom: -24px
+                    color:#F53A3A
+                    font-size: 30px
+                    padding: 5px 15px
+                    background: rgba(245, 58, 58,.3)
+                    border-radius: 50%
+            .bb-3
+                border-bottom: 2px solid #F53A3A
+                width: 360px
+                padding-bottom: 10px
+                position: relative
+                margin-top: 20px
+                &::before
+                    content: "\f111"
+                    font-family: icomoon
+                    position: absolute
+                    right: -35px
+                    bottom: -24px
+                    color:#F53A3A
+                    font-size: 30px
+                    padding: 5px 15px
+                    background: rgba(245, 58, 58,.3)
+                    border-radius: 50%
+
     .problem-inner
         background: rgba(40, 43, 45, 0.81)
         .problems-title
@@ -703,17 +830,31 @@
         height: 100%
         right: 0
         top: -70px
-        z-index: 10
     .slider-youtube
+        position: relative
         .item
+            border: none
+            outline: none
             .youtube-video
                 width: 310px
                 iframe
                     width: 90%
                     margin: 0 auto
+            ul
+                padding: 0
+                padding-left: 30px
+                li
+                    color: #F53A3A
+                    font-size: 30px
+                    vertical-align: center
+                    p 
+                        color: #000
+                        font-size: 16px
+                        padding: 0
+                        margin: 0
         .prev
             position: absolute
-            top: 90px
+            top: 40px
             left: -130px 
             border: none
             background: transparent
@@ -726,7 +867,7 @@
                 font-size: 70px
         .next
             position: absolute
-            top: 90px
+            top: 40px
             right: -50px 
             border: none
             background: transparent
