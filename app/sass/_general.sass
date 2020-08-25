@@ -1,6 +1,5 @@
 *,::after, ::before 
     box-sizing: border-box
-    box-sizing: border-box
 
 .body
     max-width: 1980px
@@ -22,7 +21,7 @@
         background: #F53A3A
         overflow: hidden
         position: absolute
-        left: 55%
+        left: 60%
         top: 0
         overflow: hidden
     &::before
@@ -33,96 +32,114 @@
         position: absolute
         top: -100px
         bottom: 0
-        left: 55%
+        left: 60%
         width: 60%
         overflow: hidden
     .header-top
         display: flex
         flex-direction: row
-        justify-content: space-between
-        padding-right: 100px
-        padding-left: 100px
+        position: relative
+        padding-right: 3%
+        padding-left: 4%
         padding-top: 25px
-        .header-menu 
+        .header-inner
             display: flex
-            flex-direction: row 
-            align-items: center
-            margin-bottom: 100px
-            .nav-menu
-                padding-left: 50px
-                .nav-item
-                    padding-right: 25px
-                    &:hover > ul
-                        display: block
-                    .nav-link
-                        color: #131313
-                        transition: 0.3s all
-                        border-bottom: 4px solid transparent
-                        font-weight: 400
-                        &:hover
-                            color: #F53A3A
-                            border-bottom: 4px solid #F53A3A
-                            padding-bottom: 0px
-                    .drop-menu
-                        padding: 0
-                        margin: 0
-                        position: absolute
-                        text-transform: none
-                        display: none
-                        z-index: 100
-                        .dropmenu-item
-                            list-style: none
-                            .dropmenu-link
+            flex-direction: row
+            justify-content: space-between
+            width: 85%
+            margin-top: 7px
+            .header-menu 
+                display: flex
+                flex-direction: row 
+                align-items: center
+                margin-bottom: 100px
+                padding-left: 30px
+                .nav-menu
+                    .navbar-nav
+                        display: flex
+                        flex-direction: row
+                        .nav-item
+                            margin-right: 40px
+                            &:hover > ul
+                                display: block
+                            .nav-link
                                 color: #131313
                                 transition: 0.3s all
+                                border-bottom: 4px solid transparent
                                 font-weight: 400
-                                text-decoration: none
-                                padding: 7px
-                                border: 1px solid rgba(0,0,0,.125)
-                                display: block
-                                background: #fff
                                 &:hover
                                     color: #F53A3A
-        .place-of-residence
-            display: flex
-            flex-direction: row 
-            .location
-                padding-right: 100px
-                .city 
-                    color: #F53A3A
-                    border-bottom: 1px dotted #F53A3A
-                    opacity: .7
-                    margin-bottom: 8px
-                .language 
-                    display: flex
-                    flex-direction: row
-                    .ru 
-                        position: relative
-                        padding-right: 10px
-                        a 
-                            color: #F53A3A
-                            border-bottom: 1px dotted #F53A3A
-                            opacity: .7
-                            padding-bottom: 4px
-                            text-decoration: none
-                        &::before
-                            content: ""
-                            position: absolute
-                            right: 0
-                            top: 6px
-                            height: 15px
-                            width: 2px
-                            background: #131313 
-                            opacity: .4
-
-                    .en
-                        padding-left: 10px
-                        a 
-                            color: #F53A3A
-                            border-bottom: 1px dotted #F53A3A
-                            opacity: .7
-                            padding-bottom: 4px
-                            text-decoration: none
+                                    border-bottom: 4px solid #F53A3A
+                                    padding-bottom: 0px
+                            .arrow 
+                                position: relative
+                                &::before
+                                    content: "\f107"
+                                    font-family: icomoon
+                                    font-size: 17px
+                                    position: absolute
+                                    right: -12px
+                                    top: 10px
+                                    font-weight: 700
+                            .drop-menu
+                                padding: 0
+                                margin: 0
+                                position: absolute
+                                text-transform: none
+                                display: none
+                                z-index: 100
+                                .dropmenu-item
+                                    list-style: none
+                                    .dropmenu-link
+                                        color: #131313
+                                        transition: 0.3s all
+                                        font-weight: 400
+                                        text-decoration: none
+                                        padding: 7px
+                                        border: 1px solid rgba(0,0,0,.125)
+                                        display: block
+                                        background: #fff
+                                        &:hover
+                                            color: #F53A3A
+            .place-of-residence
+                display: flex
+                flex-direction: row 
+                .location
+                    padding-right: 100px
+                    .city 
+                        color: #F53A3A
+                        border-bottom: 1px dotted #F53A3A
+                        opacity: .7
+                        margin-bottom: 8px
+                    .language 
+                        display: flex
+                        flex-direction: row
+                        .ru 
+                            position: relative
+                            padding-right: 10px
+                            a 
+                                color: #F53A3A
+                                border-bottom: 1px dotted #F53A3A
+                                opacity: .7
+                                padding-bottom: 4px
+                                text-decoration: none
+                            &::before
+                                content: ""
+                                position: absolute
+                                right: 0
+                                top: 6px
+                                height: 15px
+                                width: 2px
+                                background: #131313 
+                                opacity: .4
+                        .en
+                            padding-left: 10px
+                            a 
+                                color: #F53A3A
+                                border-bottom: 1px dotted #F53A3A
+                                opacity: .7
+                                padding-bottom: 4px
+                                text-decoration: none
             .header-btn
                 .tel
                     margin-bottom: 10px
@@ -143,7 +160,7 @@
                         &:hover
                             background-color: #dc3545
                             color: #fff
-    .header-content
+    .header-box
         padding-bottom: 100px
         position: relative
         &::before
@@ -153,7 +170,7 @@
             background-repeat: no-repeat
             position: absolute
             bottom: 0
-            right: -50%
+            right: -5%
             width: 500px
             height: 600px
             z-index: 5
@@ -204,7 +221,7 @@
             .prev
                 position: absolute
                 top: -10px
-                left: -130px 
+                left: -50px 
                 border: none
                 background: transparent
                 outline: none
@@ -377,7 +394,7 @@
         background: #F53A3A
         overflow: hidden
         position: absolute
-        left: 60%
+        left: 57%
         top: -100px
         overflow: hidden
     &::before
@@ -388,7 +405,7 @@
         position: absolute
         top: 0
         bottom: 0
-        left: 60%
+        left: 57%
         width: 50%
         overflow: hidden
     .trust-inner
@@ -399,10 +416,10 @@
             background-size: contain
             background-repeat: no-repeat
             position: absolute
-            bottom: -140px
-            right: -5%
-            width: 500px
-            height: 700px
+            bottom: -100px
+            right: 0
+            width: 450px
+            height: 650px
             z-index: 5
         .trust-text
             font-size: 1.1em
@@ -413,7 +430,7 @@
 // ************************************REVIEWS*************************************
 .reviews
     padding-top: 100px
-    padding-bottom: 100px
+    padding-bottom: 50px
     background: #F9FAFC
     .slider-reviews
         border: 2px solid rgba(0,0,0,.125)
@@ -742,7 +759,7 @@
         .prev
             position: absolute
             top: 90px
-            left: -130px 
+            left: -50px 
             border: none
             background: transparent
             outline: none
@@ -755,7 +772,7 @@
         .next
             position: absolute
             top: 90px
-            right: -50px 
+            right: -30px 
             border: none
             background: transparent
             outline: none
